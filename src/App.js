@@ -38,6 +38,7 @@ export default function App() {
           disabled = {message.length < 1 || message.length > maxLength}
           >Tell the world!</button>
         </form>
+        <p className={message.length > maxLength ? "over-limit" : ""}>{message.length}/{maxLength}</p>
       </div>
         )
       }
